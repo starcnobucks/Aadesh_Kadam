@@ -42,7 +42,7 @@ export const Navigation: React.FC<NavigationProps> = ({
       {/* Minimal text-only navigation (NO numbers, NO boxes, NO pills) */}
       <nav
         className="hidden md:flex items-center space-x-6 lg:space-x-8 font-mono-code text-[11px] tracking-[0.2em] uppercase"
-        aria-label="Odyssey Navigation"
+        aria-label="Main Navigation"
       >
         {navLinks.map((item) => {
           const isActive = scrollProgress >= item.min && scrollProgress < item.max;

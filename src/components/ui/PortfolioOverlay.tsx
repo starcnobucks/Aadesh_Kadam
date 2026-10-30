@@ -57,10 +57,10 @@ export const PortfolioOverlay: React.FC<PortfolioOverlayProps> = ({ scrollProgre
   return (
     <div className="relative w-full z-10 pointer-events-none text-slate-200 select-text">
       {/* ============================================================ */}
-      {/* 1. HERO — THE PORTAL (0% - 22%): Positioned on the right     */}
+      {/* 1. HERO — THE PORTAL (0% - 22%): Positioned on the left      */}
       {/* ============================================================ */}
       <section
-        className="fixed inset-0 flex flex-col justify-center items-end px-6 sm:px-16 md:px-24 transition-all duration-700 pointer-events-none"
+        className="fixed inset-0 flex flex-col justify-center items-start px-6 sm:px-16 md:px-24 transition-all duration-700 pointer-events-none"
         style={{
           opacity: heroOpacity,
           transform: `translateY(${(1 - heroOpacity) * -16}px)`,
@@ -74,18 +74,18 @@ export const PortfolioOverlay: React.FC<PortfolioOverlayProps> = ({ scrollProgre
             Hi, it's
           </div>
 
-          {/* Stepped indentation: "Aadesh" and "Kadam" below it */}
+          {/* "Aadesh" and "Kadam" right below each other */}
           <h1 className="font-display font-black tracking-tight uppercase leading-[0.88] silver-text-hero">
             <span className="block text-5xl sm:text-7xl md:text-8xl kinetic-char" style={{ animationDelay: '0.2s' }}>
               Aadesh
             </span>
-            <span className="block text-5xl sm:text-7xl md:text-8xl pl-8 sm:pl-14 md:pl-20 text-slate-100 kinetic-char" style={{ animationDelay: '0.35s' }}>
+            <span className="block text-5xl sm:text-7xl md:text-8xl text-slate-100 kinetic-char" style={{ animationDelay: '0.35s' }}>
               Kadam
             </span>
           </h1>
 
           {/* Subtitle: Generative AI Engineer */}
-          <div className="font-display text-base sm:text-xl md:text-2xl font-semibold tracking-wider uppercase silver-text-sub kinetic-char pt-1 pl-8 sm:pl-14 md:pl-20" style={{ animationDelay: '0.5s' }}>
+          <div className="font-display text-base sm:text-xl md:text-2xl font-semibold tracking-wider uppercase silver-text-sub kinetic-char pt-1" style={{ animationDelay: '0.5s' }}>
             Generative AI Engineer
           </div>
         </div>

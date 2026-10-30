@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #020308;
+    color: #e2e8f0;
+    overflow-x: hidden;
+  }
+}
+
+/* Chrome & Silver Metallic Typography */
+.silver-text-hero {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f1f5f9 25%,
+    #cbd5e1 50%,
+    #94a3b8 75%,
+    #64748b 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(255, 255, 255, 0.15));
+}
+
+.silver-text-heading {
+  background: linear-gradient(
+    170deg,
+    #ffffff 0%,
+    #e2e8f0 40%,
+    #94a3b8 70%,
+    #cbd5e1 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.silver-text-sub {
+  background: linear-gradient(
+    180deg,
+    #cbd5e1 0%,
+    #94a3b8 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.silver-border-card {
+  position: relative;
+  background: linear-gradient(135deg, rgba(8, 14, 28, 0.85) 0%, rgba(3, 6, 16, 0.92) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.silver-border-card:hover {
+  border-color: rgba(226, 232, 240, 0.35);
+  box-shadow: 0 8px 32px -8px rgba(148, 163, 184, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Kinetic Typo Stagger Animations (Typo-Trail inspired) */
+@keyframes letterRise {
+  0% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.kinetic-char {
+  animation: letterRise 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Font family helpers */
+.font-display {
+  font-family: 'Oxanium', sans-serif;
+}
+.font-mono-code {
+  font-family: 'IBM Plex Mono', monospace;
+}
